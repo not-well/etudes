@@ -6,9 +6,16 @@ import { AppComponent } from './app.component';
 import { MeuFormComponent } from './meu-form/meu-form.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
-  declarations: [AppComponent, DataBindingComponent, MeuFormComponent, InputPropertyComponent],
+  declarations: [
+    AppComponent,
+    DataBindingComponent,
+    MeuFormComponent,
+    InputPropertyComponent,
+    OutputPropertyComponent,
+  ],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
