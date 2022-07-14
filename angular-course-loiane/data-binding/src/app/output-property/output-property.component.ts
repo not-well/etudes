@@ -3,17 +3,16 @@ import {
   ElementRef,
   EventEmitter,
   Input,
-  OnInit,
   Output,
   ViewChild,
 } from '@angular/core';
 
 @Component({
-  selector: 'contador',
+  selector: 'app-contador',
   templateUrl: './output-property.component.html',
   styleUrls: ['./output-property.component.css'],
 })
-export class OutputPropertyComponent implements OnInit {
+export class OutputPropertyComponent {
   constructor() {}
 
   @Input()
@@ -24,8 +23,6 @@ export class OutputPropertyComponent implements OnInit {
 
   @ViewChild('campoInput')
   valorCampoInput: ElementRef = {} as ElementRef;
-
-  ngOnInit(): void {}
 
   incrementa(): void {
     ++this.valorCampoInput.nativeElement.value;
