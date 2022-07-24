@@ -41,3 +41,11 @@
   <p *ngSwitchCase="'pricing'">Pricing</p>
   <p *ngSwitchDefault>Home</p>
 </div>
+
+<h5>Removendo o * e usando o template</h5>
+
+<div class="container" [ngSwitch]="aba">
+  <ng-template [ngSwitchCase]="'features'">Features</ng-template>
+  <ng-template [ngSwitchCase]="'pricing'">Pricing</ng-template>
+  <ng-template [ngSwitchCase]="'home'" ngSwitchDefault>Home</ng-template>
+</div>
