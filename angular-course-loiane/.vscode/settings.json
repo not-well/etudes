@@ -1,3 +1,4 @@
 {
-  "eslint.workingDirectories": ["data-binding", "primeiro-projeto"]
+  "eslint.workingDirectories": ["data-binding", "primeiro-projeto"],
+  "cSpell.language": "en,pt,pt-BR"
 }
