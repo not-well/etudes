@@ -8,7 +8,7 @@ import { CursosService } from './cursos/cursos.service';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, CriarCursoModule, CursosModule],
-  // providers: [CursosService],
+  providers: [CursosService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
